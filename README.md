@@ -36,7 +36,7 @@ User Input
 - **Agent Orchestration**: LangGraph (state graph workflow)
 - **Vector Retrieval**: FAISS + BGE-M3 (local embedding model)
 - **Data Storage**: SQLite (142K+ policy records)
-- **LLM Inference**: Kimi API (Moonshot AI)
+- **LLM Inference**: LLM API (Such as Moonshot AI)
 - **Backend Framework**: FastAPI + Python 3.10+
 
 ---
@@ -49,7 +49,7 @@ User Input
 - **Python**: 3.10 or 3.11 (3.10 recommended)
 - **Memory**: 8GB+ RAM (for loading BGE-M3 model)
 - **Disk Space**: ~5GB (model + data + index)
-- **Network**: Access to Kimi API required
+- **Network**: Access to LLM API required
 
 ### Environment Setup
 
@@ -108,10 +108,10 @@ aiosqlite==0.21.0
 Edit the `backend/.env` file and configure the following required parameters:
 
 ```env
-# Kimi LLM API Configuration (Required)
-KIMI_API_BASE=https://apis.iflow.cn/v1
-KIMI_API_KEY=your_api_key_here  # Replace with your API Key
-KIMI_MODEL=kimi-k2-0905
+#  LLM API Configuration (Required)
+API_BASE=
+API_KEY=your_api_key_here  # Replace with your API Key
+MODEL=such as GLM 4.6
 
 # Local Model Path (Required)
 BGE_M3_PATH=D:/path/to/your/bge_m3  # Replace with your BGE-M3 model path
